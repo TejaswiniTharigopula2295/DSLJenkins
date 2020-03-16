@@ -1,8 +1,6 @@
-def gitUrl = 'git://github.com/test/test'
-
-job('test-job') {
+job('Sample') {
     scm {
-        git(gitUrl)
+        git('https://github.com/TejaswiniTharigopula2295/javademo.git')
     }
     triggers {
         scm('*/15 * * * *')
